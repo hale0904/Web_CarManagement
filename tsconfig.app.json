@@ -10,7 +10,8 @@
             "~/*": ["src/*"],
             "@app/*": ["src/app/*"],
             "@shared/*": ["src/app/shared/*"],
-            "@core/*": ["src/app/corelogic/*"]
+            "@core/*": ["src/app/core/*"],
+            "@views/*": ["src/app/views/*"]
         }
   },
   "include": [

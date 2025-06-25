@@ -1,0 +1,42 @@
+<div class="container">
+    <div *ngFor="let form of forms" class="form">
+        <header class="form__header">
+            <a [routerLink]="form.linkHome" class="form__header-link"> {{ form.home }} </a>
+            <h2 class="form__header-title">{{ form.heading }}</h2>
+        </header>
+
+        <div class="form__region">
+            <form #formRef="ngForm">
+                <div class="form__region-input">
+                    <div class="form__field" *ngFor="let field of form.fields">
+                        <h3 class="form__region-label">{{ field.label }}</h3>
+                        <input
+                            type="text"
+                            name="{{ field.name }}"
+                            [(ngModel)]="field.value"
+                            [placeholder]="field.placeholder"
+                            required
+                        />
+                    </div>
+                </div>
+
+                <div class="form__region-info">
+                    <p>{{ form.info }}</p>
+                </div>
+
+                <div class="form__region-btn">
+                    <div class="form__link">
+                        <a [routerLink]="form.link">
+                        <span>{{ form.linkText }}</span>
+                        </a>
+                    </div>
+                    <div class="form__btn" >
+                        <button type="button" (click)="onSubmit(form)">
+                            {{ form.btn }}
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

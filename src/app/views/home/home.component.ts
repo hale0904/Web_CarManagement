@@ -12,7 +12,7 @@ import { RouterModule } from "@angular/router";
 
 export class Home {
     headers = [
-        { linkUrl: '/login', linkText: 'Đăng nhập'}
+        { linkUrl: 'auth/login', linkText: 'Đăng nhập'}
     ]
     
     footers = [
