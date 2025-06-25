@@ -1,0 +1,9 @@
+<div *ngFor="let sidebar of sidebars" class="sidebar">
+    <h1> {{ sidebar.title }} </h1>
+
+    <ul class="sidebar__list">
+        <li *ngFor="let item of sidebar.items" class="sidebar__item">
+            <a [routerLink]="item.link">{{item.linkText}}</a>
+        </li>
+    </ul>
+</div>

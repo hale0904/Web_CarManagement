@@ -1,0 +1,33 @@
+.header {
+    min-height: 70px;
+    background-color: rgb(255, 255, 255);
+
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .header__logo {
+        img {
+            width: 12%;
+        }
+
+    }
+
+    .header__link {
+        a {
+            text-decoration: none;
+            color: var(--black-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            transition: all ease-in 0.3s;
+
+            &:hover {
+                color: #6e6e6e;
+            }
+        }
+    }
+}
