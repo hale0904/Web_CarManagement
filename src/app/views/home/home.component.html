@@ -1,10 +1,41 @@
 <header class="header">
     <div *ngFor="let header of headers" class="header__nav">
         <div class="header__logo">
-            <img src="" alt="logo">
+            <img src="https://img.freepik.com/premium-vector/auto-logo-car-logo-vector_590455-175.jpg" alt="logo">
         </div>
         <div class="header__link">
             <a [routerLink]="header.linkUrl"> {{ header.linkText }} </a>
         </div>
     </div>
 </header>
+
+<div class="banner">
+    <div class="banner__img">
+        <img src="https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/04/toyota-priu-prime.jpg" alt="banner">
+    </div>
+</div>
+
+<footer class="footer">
+    <div *ngFor="let footer of footers" class="footer__content">
+        <div class="footer__info">
+            <div class="footer__info-logo">
+                <img src="https://img.freepik.com/premium-vector/auto-logo-car-logo-vector_590455-175.jpg" alt="">
+            </div>
+
+            <div class="footer__info-contact">
+                <h1> {{ footer.nameShop}}</h1>
+                <p> {{ footer.hotline }}</p>
+                <p> {{ footer.email }}</p>
+                <p> {{ footer.descrip }}</p>
+                <p> {{ footer.location }}</p>
+            </div>
+        </div>
+
+        <div class="footer__broder"></div>
+
+        <div class="footer__business">
+            <p> {{ footer.year }} </p>
+            <p> {{ footer.license }} </p>
+        </div>
+    </div>
+</footer>

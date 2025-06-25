@@ -1,20 +1,98 @@
 .header {
     min-height: 70px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 
     .header__nav {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 0 100px;
     }
 
     .header__logo {
+        img {
+            width: 12%;
+        }
 
     }
 
     .header__link {
+        background-color: var(--white-color);
+        padding: 12px 0;
+        border-radius: 20px;
+        transition: all ease-in 0.3s;
+        background-color: #3b3b3b;
 
+        &:hover {
+            background-color: var(--black-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            padding: 12px 25px;
+        }
     }
-
 }
 
+.banner {
+    .banner__img {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.footer {
+    background-color: #3b3b3b;
+
+    .footer__content {
+        padding: 40px 100px;
+
+        .footer__info{
+            display:  flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+    
+            .footer__info-logo {
+                img {
+                    width: 30%;
+                }
+            }
+
+            .footer__info-contact {
+                color: var(--white-color);
+                padding-top: 30px;
+
+                h1 { 
+                    font-size: 3.4rem;
+                    padding-bottom: 30px;
+                }
+                p {
+                    font-size: 1.4rem; 
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .footer__broder {
+            border: 1px solid var(--white-color)
+        }
+
+        .footer__business {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+
+            p { 
+                font-size: 1.4rem;
+                color: var(--white-color);
+            }
+        }
+    }
+}
