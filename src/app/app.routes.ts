@@ -7,6 +7,7 @@ import { AuthGuard } from '@core/guard/auth.guard';
 import { Layout } from './shared/layout/layout.component';
 import { QuanLySanPhamAdmin } from './views/admin/quanlysanpham/quanlysanpham.component';
 import { QuanLyKhachHangAdmin } from './views/admin/quanlykhachhang/quanlykhachhang.component';
+import { DeviceGuard } from '@core/guard/device.guard';
 
 export const routes: Routes = [
     { path: '', component: Home, title: 'Car' },
@@ -16,7 +17,7 @@ export const routes: Routes = [
     {
         path: 'admin',
         component: Layout,
-        canActivate: [AuthGuard],
+        canActivate: [AuthGuard, DeviceGuard], 
         title: 'Trang chủ Admin',
         children: [
             { path: 'products', component: QuanLySanPhamAdmin, title: 'Quản lý sản phẩm'},

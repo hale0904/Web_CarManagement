@@ -1,1 +1,21 @@
-<div class="">SP</div>
+<div class="container">
+    <div *ngFor="let product of products" class="container__product">
+        <h1> {{ product.title }}</h1>
+
+        <ul class="container__product-list">
+            <li class="container__product-item">
+                <div class="container__product-info">
+                    <div class="container__product-img">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="container__product-descrip">
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
