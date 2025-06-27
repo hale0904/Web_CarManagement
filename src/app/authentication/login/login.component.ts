@@ -4,7 +4,7 @@ import { RouterModule } from "@angular/router";
 import { FormsModule } from "@angular/forms";
 import { Router } from "@angular/router";
 
-import { Account } from "@core/model/common/admin/account.service";
+import { Account } from "~/app/core/model/admin/account.model";
 import { FormConfig } from "@core/interface/login/form.config";
 
 @Component({

@@ -1,0 +1,27 @@
+<li class="container__product-item">
+  <a [routerLink]="product.linkItem" class="container__product-link-full">
+    <div class="container__product-info">
+      <div class="container__product-img">
+        <img [src]="product.imageUrl" alt="{{ product.title }}" />
+      </div>
+
+      <h1>{{ product.title }}</h1>
+
+      <div class="container__product-descrip">
+        <p>{{ product.description }}</p>
+        <p>{{ product.company }}</p>
+      </div>
+
+      <div class="container__product-nav">
+        <div *ngFor="let link of product.links" class="container__product-link">
+          <a [routerLink]="link.linkBtn">
+            {{ link.linkText }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+

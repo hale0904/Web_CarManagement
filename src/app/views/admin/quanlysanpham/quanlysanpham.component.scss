@@ -1,0 +1,19 @@
+.container {
+    margin: 20px 100px;
+
+    .container__product {
+        h1{
+            padding: 20px 0 60px 0;
+            font-size: 2.4rem;
+            letter-spacing: 0.3px;
+            color: #000000;
+        }
+    }
+
+    .container__product-list {
+        display: grid;
+        gap: 90px 50px;
+        grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+        list-style: none;
+    }
+}
