@@ -18,30 +18,84 @@
 
     .header__link {
         background-color: var(--white-color);
-        padding: 11px 0;
-        border-radius: 5px;
-        transition: all ease-in 0.3s;
-        background-color: #000000;
-
-        &:hover {
-            background-color: #6e6e6e;
-        }
 
         a {
             text-decoration: none;
-            color: var(--white-color);
-            font-size: 1.6rem;
+            color: var(--header-color);
+            font-size: 1.8rem;
             font-weight: 600;
-            letter-spacing: 0.3px;
+            letter-spacing: 0.4px;
             padding: 11px 25px;
+            transition: all ease-in 0.3s;
+
+            &:hover {
+                color: var(--black-color);
+            }
         }
     }
 }
 
 .banner {
     .banner__img {
-        img {
-            width: 100%;
+        position: relative;
+        height: 100vh;
+        min-width: 640px;
+        padding-top: 36%;
+        background: url('https://static1.topspeedimages.com/wordpress/wp-content/uploads/2023/04/toyota-priu-prime.jpg') center / cover no-repeat;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 3.6rem;
+        color: var(--white-color);
+        line-height: 3.6rem;
+        padding: 50px 20px 20px 100px;
+    }
+
+    p {
+        font-size: 1.8rem;
+        color: var(--white-color);
+        padding-left: 100px;
+    }
+}
+
+.productNew__container {
+    margin: 50px 100px ;
+
+    .productNew__list {
+        list-style: none;
+
+        .productNew__item {
+            display: flex;
+            padding: 32px 0 56px;
+            align-items: center;
+
+            .productNew__img {
+                width: 50%;
+                flex: 1;
+            }
+
+            .productNew__item-content {
+                flex: 1;
+                padding: 0 56px;
+                height: 300px;
+                align-content: center;
+                position: relative;
+
+                .productNew__item-content-label {
+                    position: absolute;
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                    top: 26%;
+                    color: var(--text-color-content);
+                }
+
+                p {
+                    margin-top: 16px;
+                    font-size: 1.8rem;
+                    color: var(--header-color);
+                }
+            }
         }
     }
 }
