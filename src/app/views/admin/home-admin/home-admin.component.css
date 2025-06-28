@@ -1,0 +1,9 @@
+.home-a {
+    height: 100%;
+    padding: 40px;
+    
+    span {
+        font-size: 1.6rem;
+        color: rgb(200, 16, 16);
+    }
+}
