@@ -6,7 +6,7 @@ import { Layout } from "@shared/layout/layout.component";
     standalone: true,
     imports: [Layout],
     templateUrl: './home-admin.component.html',
-    styleUrl: './home-admin.component.scss'
+    styleUrl: './home-admin.component.css'
 })
 
 export class HomeAdmin {}

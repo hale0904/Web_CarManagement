@@ -7,7 +7,7 @@ import { RouterModule } from "@angular/router";
     standalone: true,
     imports: [RouterModule, CommonModule],
     templateUrl: './button-delete.component.html',
-    styleUrl: './button-delete.component.scss'
+    styleUrl: './button-delete.component.css'
 })
 
 export class btnDeleteQLSP {

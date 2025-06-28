@@ -12,7 +12,7 @@ import { SanPham } from '~/app/core/model/admin/quanlysanpham.model';
   standalone: true,
   imports: [RouterModule, CommonModule, ProductCardComponent],
   templateUrl: './quanlysanpham.component.html',
-  styleUrl: './quanlysanpham.component.scss',
+  styleUrl: './quanlysanpham.component.css',
 })
 export class QuanLySanPhamAdmin implements OnInit {
   products: ProductCardModel[] = [];

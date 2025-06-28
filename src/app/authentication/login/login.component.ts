@@ -12,7 +12,7 @@ import { FormConfig } from "@core/interface/login/form.config";
   standalone: true,
   imports: [CommonModule, RouterModule, FormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: './login.component.css'
 })
 export class Login {
   constructor (private router: Router) {}

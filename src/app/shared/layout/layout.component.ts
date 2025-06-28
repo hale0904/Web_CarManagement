@@ -9,7 +9,7 @@ import { SidebarAdmin } from "./sidebar-a/sidebar-a.component";
     standalone: true,
     imports: [HeaderAdmin, SidebarAdmin, RouterOutlet],
     templateUrl: './layout.component.html',
-    styleUrl: './layout.component.scss'
+    styleUrl: './layout.component.css'
 })
 
 export class Layout {}

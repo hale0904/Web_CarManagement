@@ -8,7 +8,7 @@ import { ProductCardModel } from "~/app/core/interface/admin/quanlysanpham/quanl
     standalone: true,
     imports: [CommonModule, RouterModule],
     templateUrl: './card.component.html',
-    styleUrl: './card.component.scss'
+    styleUrl: './card.component.css'
 })
 
 export class ProductCardComponent  {

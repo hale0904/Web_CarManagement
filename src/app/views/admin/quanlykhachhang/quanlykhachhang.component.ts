@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
     standalone: true,
     imports: [],
     templateUrl: './quanlykhachhang.component.html',
-    styleUrl: './quanlykhachhang.component.scss'
+    styleUrl: './quanlykhachhang.component.css'
 })
 
 export class QuanLyKhachHangAdmin {}

@@ -7,7 +7,7 @@ import { RouterModule } from "@angular/router";
     standalone: true,
     imports: [RouterModule, CommonModule],
     templateUrl: './button-update.component.html',
-    styleUrl: './button-update.component.scss'
+    styleUrl: './button-update.component.css'
 })
 
 export class btnUpdateQLSP {
