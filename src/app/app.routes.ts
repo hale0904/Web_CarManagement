@@ -8,6 +8,7 @@ import { QuanLyKhachHangAdmin } from './views/admin/quanlykhachhang/quanlykhachh
 import { DeviceGuard } from '@core/guard/device.guard';
 import { HomeAdmin } from './views/admin/home-admin/home-admin.component';
 import { Layout } from './shared/layout/layout.component';
+import { ChiTietSanPhamAdmin } from './views/admin/quanlysanpham/chitietsanpham/chitietsanpham.component';
 
 export const routes: Routes = [
     { path: '', component: Home, title: 'Car' },
@@ -22,6 +23,7 @@ export const routes: Routes = [
         children: [
             { path: '', component: HomeAdmin, title: 'Trang chủ admin'},
             { path: 'products', component: QuanLySanPhamAdmin, title: 'Quản lý sản phẩm'},
+            { path: 'detailProduct/:title', component: ChiTietSanPhamAdmin, title: 'Chi tiết sản phẩm' },
             { path: 'customers', component: QuanLyKhachHangAdmin, title: 'Quản lý khách hàng'}
         ]
     }

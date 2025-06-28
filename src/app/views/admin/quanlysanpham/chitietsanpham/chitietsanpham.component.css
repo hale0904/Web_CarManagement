@@ -1,0 +1,36 @@
+.detail {
+    
+    .detail__img {
+        display: flex;
+        margin: 30px 100px 0px 20px;
+
+        img {
+            width: 80%;
+            flex: content;
+        }
+    }
+
+    .detail__info {
+        background-color: black;
+
+
+        h2 {
+            font-size: 3rem;
+            line-height: 6rem;
+            padding: 10px 0;
+            color: var(--white-color);
+            margin-left: 20px;
+        }
+
+        .detail__descrip {
+            padding: 10px 100px 30px 20px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 2rem;
+                color: #d7d7d7;
+            }
+        }
+    }
+}

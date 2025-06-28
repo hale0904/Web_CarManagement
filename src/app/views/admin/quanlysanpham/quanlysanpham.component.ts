@@ -22,14 +22,14 @@ export class QuanLySanPhamAdmin implements OnInit {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data: SanPham[]) => {
       this.products = data.map((sp) => ({
-        linkItem: '/detailProduct',
+        linkItem: 'detailProduct',
         title: sp.nameCar,
         imageUrl: sp.imgCar,
         description: sp.description,
         company: sp.company,
         links: [
-          { linkBtn: '/updateProduct', linkText: 'Cập nhật' },
-          { linkBtn: '/deleteProduct', linkText: 'Xóa' },
+          { linkBtn: 'updateProduct', linkText: 'Cập nhật' },
+          { linkBtn: 'deleteProduct', linkText: 'Xóa' },
         ],
       }));
     });

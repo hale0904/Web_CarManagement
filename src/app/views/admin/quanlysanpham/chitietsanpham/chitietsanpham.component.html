@@ -1,0 +1,15 @@
+<div *ngIf="sanpham" class="detail">
+    <div class="detail__img">
+        <img [src]="sanpham.imgCar" />
+    </div>
+
+    <div class="detail__info">
+        <h2>{{ sanpham.nameCar }}</h2>
+
+        <div class="detail__descrip">
+            <p><strong>Hãng:</strong> {{ sanpham.company }}</p>
+            <p><strong>Giá:</strong> {{ sanpham.price | number }} VND</p>
+            <p><strong>Mô tả:</strong> {{ sanpham.description }}</p>
+        </div>
+    </div>
+</div>

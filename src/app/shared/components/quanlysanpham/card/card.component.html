@@ -1,5 +1,5 @@
 <li class="container__product-item">
-  <a [routerLink]="product.linkItem" class="container__product-link-full">
+  <a [routerLink]="['/admin', product.linkItem, product.title]" class="container__product-link-full">
     <div class="container__product-info">
       <div class="container__product-img">
         <img [src]="product.imageUrl" alt="{{ product.title }}" />

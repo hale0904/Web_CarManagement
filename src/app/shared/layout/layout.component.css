@@ -1,7 +1,7 @@
 .container {
     display: flex;
 
-    .ocntainer__sidebar {
+    .container__sidebar {
         flex: 1;
     }
 
