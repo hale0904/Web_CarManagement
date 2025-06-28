@@ -25,7 +25,6 @@ export class QuanLySanPhamAdmin implements OnInit {
         linkItem: 'detailProduct',
         title: sp.nameCar,
         imageUrl: sp.imgCar,
-        description: sp.description,
         company: sp.company,
         links: [
           { linkBtn: 'updateProduct', linkText: 'Cập nhật' },

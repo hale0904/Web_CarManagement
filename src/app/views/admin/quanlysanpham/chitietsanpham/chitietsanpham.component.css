@@ -24,12 +24,13 @@
 
         .detail__descrip {
             padding: 10px 100px 30px 20px;
-            display: flex;
-            justify-content: space-between;
 
             p {
+                padding: 10px 0;
                 font-size: 2rem;
-                color: #d7d7d7;
+                color: #f8f8f8;
+                line-height: 3.2rem;
+                text-align: justify;
             }
         }
     }

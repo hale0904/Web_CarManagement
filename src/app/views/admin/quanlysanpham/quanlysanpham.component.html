@@ -2,6 +2,14 @@
   <div class="container__product">
     <h1>QUẢN LÝ SẢN PHẨM</h1>
 
+    <div class="container__product-nav">
+      <div class="container__product-filter">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button><i class="fa-solid fa-filter"></i></button>
+      </div>
+      <a href="addProduct">Thêm sản phẩm mới</a>
+    </div>
+
     <ul class="container__product-list">
       <app-product-card
         *ngFor="let product of products"

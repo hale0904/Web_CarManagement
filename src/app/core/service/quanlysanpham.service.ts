@@ -9,7 +9,7 @@ export class ProductService {
       new SanPham(
         'Hyundai Creta',
         'https://cdn.honda.com.vn/automobiles/August2024/hzd1qemWl8vHJt5MMDZC.png',
-        'Thiết kế thể thao',
+        'Công nghệ tiên tiến, hiện đại kết hợp giữa hệ thống truyền động và khối động cơ mạnh mẽ cùng hộp số tự động/hộp số ly hợp kép 8 cấp mang lại cảm giác vận hành êm ái, bền bỉ. Hyundai Creat còn được trang bị gói công nghệ an toàn chủ động tiên tiến Hyundai SMARTSENSE với nhiều cải tiến vượt trội giúp bạn luôn an tâm khi cầm lái.',
         1000000000,
         'Hyundai'
       ),
@@ -33,13 +33,6 @@ export class ProductService {
         'Động cơ mạnh mẽ',
         2000000000,
         'Hyundai'
-      ),
-      new SanPham(
-        'WILD',
-        'https://tiki.vn/blog/wp-content/uploads/2023/07/xe-dien-vinfast-thumb-1.jpg',
-        'Thiết kế thể thao',
-        1500000,
-        'Vinfast'
       ),
     ];
 
