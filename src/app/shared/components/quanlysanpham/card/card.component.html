@@ -1,5 +1,5 @@
 <li class="container__product-item">
-  <a [routerLink]="['/admin', product.linkItem, product.title]" class="container__product-link-full">
+  <a [routerLink]="['/admin', product.linkItem, product.idCar]" class="container__product-link-full">
     <div class="container__product-info">
       <div class="container__product-img">
         <img [src]="product.imageUrl" alt="{{ product.title }}" />
@@ -10,16 +10,15 @@
       <div class="container__product-descrip">
         <p>{{ product.company }}</p>
       </div>
-
-      <div class="container__product-nav">
-        <div *ngFor="let link of product.links" class="container__product-link">
-          <a [routerLink]="link.linkBtn">
-            {{ link.linkText }}
-          </a>
-        </div>
-      </div>
     </div>
   </a>
+    <div class="container__product-nav">
+      <div *ngFor="let link of product.links" class="container__product-link">
+        <a [routerLink]="link.linkBtn">
+          {{ link.linkText }}
+        </a>
+      </div>
+    </div>
 </li>
 
 

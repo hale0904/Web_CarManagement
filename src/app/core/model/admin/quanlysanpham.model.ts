@@ -7,12 +7,14 @@ export class Hang {
 }
 
 export class SanPham extends Hang {
+  id: string;
   nameCar: string;
   imgCar: string;
   description: string;
   price: number;
 
   constructor(
+    id: string,
     nameCar: string,
     imgCar: string,
     description: string,
@@ -20,6 +22,7 @@ export class SanPham extends Hang {
     company: string
   ) {
     super(company);
+    this.id = id;
     this.nameCar = nameCar;
     this.imgCar = imgCar;
     this.description = description;

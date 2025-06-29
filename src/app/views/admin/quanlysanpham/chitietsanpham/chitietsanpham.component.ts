@@ -22,10 +22,10 @@ export class ChiTietSanPhamAdmin implements OnInit{
     ) {}
 
     ngOnInit(): void {
-        const title = this.route.snapshot.paramMap.get('title');
-        if (title) {
+        const id = this.route.snapshot.paramMap.get('id');
+        if (id) {
             this.productService.getProducts().subscribe((products) => {
-                this.sanpham = products.find((p) => p.nameCar === title);
+                this.sanpham = products.find((p) => p.id === id);
             });
         }
     }

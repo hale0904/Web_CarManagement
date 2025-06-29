@@ -13,17 +13,16 @@
     .detail__info {
         background-color: black;
 
-
-        h2 {
+        h1, h2 {
             font-size: 3rem;
             line-height: 6rem;
-            padding: 10px 0;
+            padding: 30px 0 0;
             color: var(--white-color);
-            margin-left: 20px;
+            margin-left: 40px;
         }
 
         .detail__descrip {
-            padding: 10px 100px 30px 20px;
+            padding: 10px 100px 30px 40px;
 
             p {
                 padding: 10px 0;

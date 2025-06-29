@@ -23,6 +23,7 @@ export class QuanLySanPhamAdmin implements OnInit {
     this.productService.getProducts().subscribe((data: SanPham[]) => {
       this.products = data.map((sp) => ({
         linkItem: 'detailProduct',
+        idCar: sp.id,
         title: sp.nameCar,
         imageUrl: sp.imgCar,
         company: sp.company,

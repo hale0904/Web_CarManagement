@@ -23,7 +23,7 @@ export const routes: Routes = [
         children: [
             { path: '', component: HomeAdmin, title: 'Trang chủ admin'},
             { path: 'products', component: QuanLySanPhamAdmin, title: 'Quản lý sản phẩm'},
-            { path: 'detailProduct/:title', component: ChiTietSanPhamAdmin, title: 'Chi tiết sản phẩm' },
+            { path: 'detailProduct/:id', component: ChiTietSanPhamAdmin, title: 'Chi tiết sản phẩm' },
             { path: 'customers', component: QuanLyKhachHangAdmin, title: 'Quản lý khách hàng'}
         ]
     }

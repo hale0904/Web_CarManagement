@@ -35,29 +35,29 @@
                 letter-spacing: 0.2px;
                 padding: 10px 20px;
             }
+        }
+    }
 
-            .container__product-nav {
-                padding: 10px 20px;
-                background-color: #000;
-                display: flex;
-                justify-content: space-between;
+    .container__product-nav {
+        padding: 10px 20px;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
 
-                .container__product-link {
-                    a {
-                        text-decoration: none;
-                        font-size: 1.4rem;
-                        color: var(--white-color);
-                        background-color: #4f4f4f;
-                        padding: 6px 12px;
-                        border-radius: 2px;
-                        display: inline-block;
-                        transition: all ease-in 0.4s;
+        .container__product-link {
+            a {
+                text-decoration: none;
+                font-size: 1.4rem;
+                color: var(--white-color);
+                background-color: #4f4f4f;
+                padding: 6px 12px;
+                border-radius: 2px;
+                display: inline-block;
+                transition: all ease-in 0.4s;
 
-                        &:hover {
-                            background-color: #fff;
-                            color: #000;
-                        }
-                    }
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
                 }
             }
         }
