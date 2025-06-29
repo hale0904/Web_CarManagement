@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { SanPham } from '../model/admin/quanlysanpham.model';
 import { Observable, of } from 'rxjs';
+
+import { SanPham } from '../model/admin/quanlysanpham.model';
+import { ProductCardModel } from '../interface/admin/quanlysanpham/quanlysanpham.interface';
 
 @Injectable({ providedIn: 'root' })
 export class ProductService {
@@ -41,5 +43,16 @@ export class ProductService {
     ];
 
     return of(products);
+  }
+
+  filterProductCards(query: string, list: ProductCardModel[]): ProductCardModel[] {
+    const q = query.trim().toLowerCase();
+    if (!q) return list;
+
+    return list.filter(p =>
+      p.idCar.toLowerCase().includes(q) ||
+      p.title.toLowerCase().includes(q) ||
+      p.company.toLowerCase().includes(q)
+    );
   }
 }

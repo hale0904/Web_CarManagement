@@ -4,7 +4,10 @@
 
     <div class="container__product-nav">
       <div class="container__product-filter">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button (click)="toggleSearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
         <button><i class="fa-solid fa-filter"></i></button>
       </div>
       <a href="addProduct">Thêm sản phẩm mới</a>
@@ -12,9 +15,19 @@
 
     <ul class="container__product-list">
       <app-product-card
-        *ngFor="let product of products"
+        *ngFor="let product of filteredProducts"
         [product]="product"
       ></app-product-card>
     </ul>
+
+    <!-- Search input & overlay -->
+    <div class="search-popub" *ngIf="isSearchVisible">
+        <div class="search-popub__box">
+          <p>TÌm kiếm sản phẩm</p>
+          <input type="text" placeholder="Tìm sản phẩm theo tên hoặc id" [(ngModel)]="searchText" />
+        </div>
+        <div class="overlay" (click)="closeSearch()">
+        </div>
+    </div>
   </div>
 </div>
